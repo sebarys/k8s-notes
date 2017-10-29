@@ -1,1 +1,0 @@
-# Kuberenetes base concepts

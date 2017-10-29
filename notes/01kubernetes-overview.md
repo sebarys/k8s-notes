@@ -10,7 +10,7 @@
 
 **Pod** - wrapper for one container or more containers (application)
 
-**Service** - Pod is running internally, there is no way to call it external, Service is responsible for connecting between world and our Pods.
+**Service** - Pod is running internally, there is no way to call it external, Service is responsible for connecting between world and our Pods.ų
 
 All creates Pods are defined in SDN network and are not visible from our network (there is a isolation), thanks to that we can create namespaces which will be fully isolated.
 

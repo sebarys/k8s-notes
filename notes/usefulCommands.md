@@ -15,3 +15,6 @@
 `kubectl rollout undo deployment/{deploymentName}` get information about given deployment status </br>
 `kubectl set image deployment/{deploymentName} {containerName}={imageName}:{imageVersion}` set container image </br>
 `kubectl edit deployment/{deploymentName}` edit deployment object </br>
+
+
+`kubectl convert -f pod.yaml --local -o json` Convert the live state of the resource specified by 'pod.yaml' to the latest version and print to stdout in json format.
