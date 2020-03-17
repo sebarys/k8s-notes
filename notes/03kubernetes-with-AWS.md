@@ -18,7 +18,7 @@ Required IAM permissions
 3. Create DNS domain
  - you need to create domain e.g. here for free http://www.dot.tk/en/index.html?lang=en (I made sebarys.tk)
  - in amazon route 53 create hosted zone (it cost 0.5$ per month) e.g. kubernetes.sebarys.tk
- - take your hosted zones values and add as nameservers in your domain in freenom remove dots from the end of nameservers (https://my.freenom.com/knowledgebase.php?action=displayarticle&id=3)
+ - take your hosted zones values and add as nameservers in your domain in freenom (remove dots from the end of nameservers https://my.freenom.com/knowledgebase.php?action=displayarticle&id=3)
 
 ## Create cluster using kops
 

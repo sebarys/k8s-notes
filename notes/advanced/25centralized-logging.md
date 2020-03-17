@@ -7,6 +7,8 @@ In this example we will use:
 - Kibana for visualisation
 - LogTrail - easy to use UI (plugin for Kibana)
 
+On each node we have Fluentd (DaemonSet) -> Logs are stored in StatefulSet of ElasticSearch -> we can visualise it in Kibana
+
  To create cluster on AWS using kops execute following commands:
  - `export AWS_PROFILE=my-private` </br>
  - `kops create cluster --name=kubernetes.sebarys.tk --state=s3://kops-state-94sr11 --zones=eu-central-1a --node-count=2 --node-size=t2.micro --master-size=t2.micro --dns-zone=kubernetes.sebarys.tk --yes`
@@ -22,6 +24,10 @@ In this example we will use:
  nodeSelector:
    beta.kubernetes.io/fluentd-ds-ready: "true"
 ```
-Node selector means that this DeamonSet will be running only on nodes with set that selector as a label. In file *deployments/logging/fluentd-es-configmap.yml* we have fluentd configuration as configMap.
+Node selector means that this DeamonSet will be running only on nodes with set that selector as a label.
+To label nodes you can execute: </br>
+`kubectl label nodes <NODE_ID> <LABEL_KEY>=<LABEL_VALUE>`
+
+In file *deployments/logging/fluentd-es-configmap.yml* we have fluentd configuration as configMap.
 
 To display logs we will use Kibana. In file *deployments/logging/kibana-deployment.yml* is Kibana deployemtn manifest. Also we create service to expose Kibana.

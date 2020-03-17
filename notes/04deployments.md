@@ -10,7 +10,7 @@ Deployment object is a declaration that allows to do app deployments or updates.
 
 With deployment object you can:
 - create a deployment
-- updadate a deployment
+- update a deployment
 - do rolling updates
 - rollback to previous version
 

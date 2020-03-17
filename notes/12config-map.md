@@ -36,12 +36,12 @@ Example Pod contains of nginx and k8s-demo containers, manifest is in the file *
 After creating Pod and Service we can curl service:
 **curl SERVICE_URL -vvvv**, example response:
 ```
-* Rebuilt URL to: http://192.168.99.100:30592/
-*   Trying 192.168.99.100...
+* Rebuilt URL to: http://IP_ADDRESS:30592/
+*   Trying IP_ADDRESS...
 * TCP_NODELAY set
-* Connected to 192.168.99.100 (192.168.99.100) port 30592 (#0)
+* Connected to IP_ADDRESS (IP_ADDRESS) port 30592 (#0)
 > GET / HTTP/1.1
-> Host: 192.168.99.100:30592
+> Host: IP_ADDRESS:30592
 > User-Agent: curl/7.54.0
 > Accept: */*
 >
@@ -52,13 +52,13 @@ After creating Pod and Service we can curl service:
 < Content-Length: 12
 < Connection: keep-alive
 < X-Powered-By: Express
-< ETag: W/"c-7Qdih1MuhjZehB6Sv8UNjA"
+< ETag: ZZW/sd"ascasd-7Qdsddddd"
 <
-* Connection #0 to host 192.168.99.100 left intact
+* Connection #0 to host IP_ADDRESS left intact
 Hello World!⏎
 ```
 
 Like we see request is going to node app through our configured nginx reverse proxy.
 
 To go to nginx container bash:
-**kubectl exex -it helloworld-nginx -c nginx -- bash**
+**kubectl exec -it helloworld-nginx -c nginx -- bash**

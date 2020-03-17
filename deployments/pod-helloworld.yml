@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: nodehelloworld.example.com
+  name: test-pod-sr
   labels:
-    app: helloworld
+    app: helloworld-sr
 spec:
   containers:
   - name: k8s-demo
@@ -11,3 +11,15 @@ spec:
     ports:
     - name: nodejs-port
       containerPort: 3000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: test-pod-sr
+spec:
+  ports:
+  - port: 3000
+    targetPort: nodejs-port
+    protocol: TCP
+  selector:
+    app: helloworld-sr

@@ -17,7 +17,7 @@ Created volume:
     "AvailabilityZone": "eu-central-1a",
     "Encrypted": false,
     "VolumeType": "gp2",
-    "VolumeId": "vol-0357721cac60c84c9",
+    "VolumeId": "vol-Id",
     "State": "creating",
     "Iops": 100,
     "SnapshotId": "",
@@ -41,7 +41,7 @@ When we describe Pod we can check on which node it is running. To stop node exec
 
 To clean up:
 - **kubectl delete -f volumes/helloworld-with-volume.yml** delete deployment with attached volume
-- **export AWS_PROFILE=my-private** and **aws ec2 delete-volume --volume-id vol-0357721cac60c84c9** delete created volume
+- **export AWS_PROFILE=my-private** and **aws ec2 delete-volume --volume-id vol-Id** delete created volume
 - **kops delete cluster --name kubernetes.sebarys.tk --state=s3://kops-state-94sr11 --yes**
 
 ## Volume Provisioning
