@@ -3,7 +3,7 @@
 Kubernetes allows you to store data outside the container to allow to keep state of application. Persistent Volumes allows you attach a volume to a container that will exists even when the container stops.
 
 Volumes can be attached using different volume plugins.
-<p align="left"><img src="img/volumes.jpg"/></p>
+<p align="left"><img src="../img/volumes.png"/></p>
 
 ## Example
 

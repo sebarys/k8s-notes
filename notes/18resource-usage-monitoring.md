@@ -8,7 +8,7 @@ Example manifest of Heapster: `https://github.com/kubernetes/heapster/tree/maste
 
 Overview of architecture:
 
-<p align="left"><img src="img/resource-usage-monitoring.png"/></p>
+<p align="left"><img src="../img/resource-usage-monitoring.png"/></p>
 
 
 To create monitoring services create from manifests in *deployments/resource-usage-monitoring*

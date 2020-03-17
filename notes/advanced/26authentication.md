@@ -33,7 +33,7 @@ You authenticate yourself -> receive an ID Token
 Token can be verified because it is signed. This token is JWT (Json Web Token).
 You can pass this token to kubectl commands by flag `kubectl ... --token=<TOKEN>`
 
-<p align="left"><img src="img/authentication.png"/></p>
+<p align="left"><img src="../../img/authentication.png"/></p>
 
 
 ## OpenID Demo:

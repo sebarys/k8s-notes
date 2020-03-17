@@ -1,7 +1,7 @@
 # Ingress
 Ingress is a solution that allows inbound connection to the cluster. It is an alternative to the external LoadBalancer or nodePorts. External load balance like in e.g. cost money so you could use ingress. Additionally you could better customise your traffic distribution.
 
-<p align="left"><img src="img/ingress.png"/></p>
+<p align="left"><img src="../img/ingress.png"/></p>
 
 In ingress you can define your own custom rules. Example of ingress definition you can find in file *deployments/ingress/ingress.yml*
 

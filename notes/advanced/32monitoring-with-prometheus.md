@@ -4,7 +4,7 @@ Open source (build in Soundcloud) monitoring and alerting tool, can be compared 
 
 Metrics collection happens via a pull model over HTTP.
 
-<p align="left"><img src="img/Prometheus.png"/></p>
+<p align="left"><img src="../../img/Prometheus.png"/></p>
 
 We will create Prometheus Operator component that allow us to register resources that we want to monitor.
 

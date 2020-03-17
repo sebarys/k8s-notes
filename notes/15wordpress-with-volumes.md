@@ -60,6 +60,6 @@ kubectl create -f wordpress-web-service.yml
 ```
 
 We are using LoadBalancer and if we want to use proper DNS name we need to go to Route53 -> our DNS management and create new record set as alias to created LoadBalancer.
-<p align="left"><img src="img/new-record-set.png"/></p>
+<p align="left"><img src="../img/new-record-set.png"/></p>
 
 Wordpress blog will be visible under created route.

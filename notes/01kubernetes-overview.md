@@ -1,6 +1,6 @@
 # Kubernetes
 
-<p align="left"><img src="img/kubernetes.jpg"/></p>
+<p align="left"><img src="../img/kubernetes.jpg"/></p>
 
 **Controller Manager** (in master node) - never ending process which is responsible for valid state of cluster (supervisor with state managing)
 
@@ -66,7 +66,7 @@ Each Pod has unique IP not exposed outisde the cluster without a Service. Servic
 - **LoadBalancer** - create external load balancer in the current cloud if supported and assign fixed IP to the service (superset of NodePort)
 - **ExtenalName** - exposes the service using arbitrary name (specified by externalName in the spec), no proxy is used and kube-dns v.1.7 is required
 
-<p align="left"><img src="img/services.svg" class="img-click-modal"/></p>
+<p align="left"><img src="../img/services.svg" class="img-click-modal"/></p>
 
 Services match a set of Pods using labels and selectors.
 
